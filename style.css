@@ -64,3 +64,78 @@ radial-gradient(circle at 80% 35%,#e99d67,transparent 40%);box-shadow:0 16px 45p
 .classroom-panel{border-color:#816f9b;background:linear-gradient(145deg,#1b2441f5,#10172af5)}
 @media(max-width:690px){.welcome-art{min-height:420px}.welcome h1{letter-spacing:-2px}.hero:after{right:-220px}}
 @media(prefers-reduced-motion:reduce){.cta,.option{transition:none}}
+
+
+/* LIFE ON THE EDGE 13.0 — comprehensive editorial redesign */
+:root{--bg:#080d1b;--surface:#101a2c;--line:#445575;--gold:#ffca78;--muted:#b6c6dc;--white:#fff9f1;--green:#65e7c5;--accent:#ff9a72;--cyan:#83d6f0;--purple:#b69aff;font-family:Inter,"Segoe UI",system-ui,sans-serif}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse at 7% 0%,#462958 0,transparent 34%),radial-gradient(ellipse at 100% 30%,#154e63 0,transparent 42%),linear-gradient(155deg,#090c1b,#141629 47%,#071d29);background-attachment:fixed}
+body:before{opacity:.17;background-size:70px 70px}
+.app{max-width:1530px;padding:24px 36px}
+.top{padding:8px 0 23px;margin-bottom:24px;border-bottom:1px solid #68748b66}
+.brandmark{font-size:clamp(26px,3vw,42px);letter-spacing:-2.3px}.brandmark span{font-weight:600;color:#c7d5eb}.brandmark em{color:#ffc77e}
+.strap{letter-spacing:2.6px;font-size:10px;color:#c1d0e3}
+.live{background:#153b37;border:1px solid #3d8e79;color:#b2fbe1;box-shadow:0 0 20px #53caa31b}
+.ghost{background:#ffffff0b;border:1px solid #7585a366;border-radius:12px;padding:12px 16px;color:#e7edfa;transition:.2s}.ghost:hover{background:#ffffff17;border-color:#ffce8c}
+.welcome{grid-template-columns:minmax(0,1.28fr) minmax(360px,.72fr);gap:26px;min-height:710px}
+.welcome-art{min-height:710px;border:1px solid #e0ac7b66;border-radius:28px;padding:clamp(30px,5vw,72px);background:linear-gradient(0deg,#070b19 0%,#0a0d20eb 28%,#15112e99 60%,#15112e33 100%),url('assets/financial-city.svg') center center/cover;box-shadow:0 28px 80px #0009,0 0 0 1px #ffffff12 inset}
+.welcome-art:before{display:none}.welcome-art:after{background:linear-gradient(90deg,#090d1c99,transparent 70%)}
+.welcome-art>.overline{font-size:12px;letter-spacing:4px;color:#ffd79b}
+.welcome h1{font-size:clamp(56px,6.2vw,105px);line-height:.96;letter-spacing:-5px;margin:22px 0 25px;max-width:760px;text-wrap:balance}
+.welcome h1 span{background:linear-gradient(100deg,#fff0c2,#ffab70);color:transparent;background-clip:text;-webkit-background-clip:text}
+.welcome-art p{font-size:clamp(17px,1.5vw,21px);line-height:1.65;max-width:560px;color:#f2f4fc}
+.welcome-badges{margin-top:22px}.welcome-badges span{background:#101c3fdd;border:1px solid #bd9e8b88;padding:11px 15px;letter-spacing:.2px}
+.startpanel{padding:clamp(24px,3vw,42px);border-radius:26px;border:1px solid #6d6c8a;border-top:4px solid #ffbe79;background:linear-gradient(160deg,#24233d,#131c33 52%,#131c2e);box-shadow:0 25px 70px #0006}
+.startpanel h2{font-size:clamp(28px,2.5vw,39px);line-height:1.13;letter-spacing:-1.5px;color:#fff7e9}
+.startpanel label{margin-top:24px;color:#d5e1f0}
+input,select{background:#080f22;border:1px solid #6b7794;color:#fff;border-radius:12px;padding:15px 16px;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus{border-color:#ffd092;box-shadow:0 0 0 4px #ffb97522;outline:0}
+.cta{border-radius:13px;background:linear-gradient(100deg,#ff966b,#ffca79 55%,#ffe8a4);box-shadow:0 10px 32px #ff94513d;color:#1b1b28;letter-spacing:.6px;font-size:13px}
+.cta:hover{filter:brightness(1.07);transform:translateY(-2px)}
+.hero{min-height:285px;padding:40px 44px;border-radius:24px;border:1px solid #a08895;background:linear-gradient(95deg,#0b1027f5 5%,#121734e0 55%,#1d173480),url('assets/financial-city.svg') center 44%/cover;box-shadow:0 20px 60px #0006}
+.hero:after{display:none}.hero h1{font-size:clamp(36px,4.5vw,63px);line-height:1.05;letter-spacing:-2.6px;max-width:800px}
+.hero p{font-size:16px;color:#dce9f5}.chapter{padding:16px 22px;background:#0b1227b8;border:1px solid #d4ac8b66;border-radius:17px;backdrop-filter:blur(7px)}
+.chapter strong{font-size:66px;color:#ffdb9b}
+.progress{height:9px;margin:20px 0 22px;background:#2a314d;border-radius:99px;border:1px solid #56678455}
+.progress div{background:linear-gradient(90deg,#f68e73,#ffce7b,#80e1d2)}
+.stats{gap:15px}.stats article{padding:24px 23px;min-height:142px;border-radius:18px;background:linear-gradient(155deg,#263450,#161d35);border:1px solid #5a6c8b;box-shadow:0 10px 26px #0004}
+.stats article:nth-child(1){border-top:4px solid #ffba76}.stats article:nth-child(2){border-top:4px solid #77d8eb}.stats article:nth-child(3){border-top:4px solid #b8a1ff}.stats article:nth-child(4){border-top:4px solid #67e8c3}
+.stats span{font-size:11px;letter-spacing:1.8px;color:#c2d2e7}.stats strong{font-size:clamp(23px,2.6vw,36px);color:#fff7ec}.stats small{color:#bac8db}
+.columns{gap:22px;margin-top:22px;grid-template-columns:minmax(0,1.7fr) minmax(290px,.8fr)}
+.event,.panel,.scorebox,.reportbox{border-radius:22px;border:1px solid #5a6988;background:linear-gradient(145deg,#202b45,#121b30 55%,#191a33);box-shadow:0 16px 40px #0005}
+.event{padding:clamp(25px,3.2vw,44px);border-left:5px solid #ffb779}
+.event h2{font-size:clamp(30px,3.2vw,48px);line-height:1.1;margin:26px 0 18px;color:#fff1d9}
+.event-text{font-size:17px;line-height:1.8;color:#e0e9f6}
+.tip{background:linear-gradient(100deg,#463348,#263a50);border-left:4px solid #ffcb85;padding:16px 20px;color:#e3eaf7}
+.option{border-radius:15px;border:1px solid #627897;background:linear-gradient(115deg,#273a58,#1c2540);padding:23px;box-shadow:0 7px 22px #0003}
+.option strong{font-size:18px}.option small{color:#c3d1e5}.option:hover{border-color:#ffd38c;background:linear-gradient(110deg,#413758,#264565);transform:translateY(-2px)}
+.panel{padding:29px}.panel h3{font-size:24px;letter-spacing:-.7px}.panel p,.measure span,.pair span{color:#c1d0e4}
+.meter{background:#36445e;height:10px}.meter i{background:linear-gradient(90deg,#ff9d6e,#69e4b6)}
+.journal{color:#c1cde1}.pair{border-color:#4c5b77}
+.score{color:#ffd28b;text-shadow:0 0 45px #ffb36b33}.timeline article{background:linear-gradient(145deg,#273552,#181e34);border:1px solid #65718e}
+#escape-room{border-radius:20px}
+#escape-room:after{color:#ffdca6;letter-spacing:4px}
+#escape-room .escape-doc{border-left:4px solid #ffc27b;box-shadow:0 8px 25px #0005}
+#escape-room .escape-doc.selected-evidence{border-left-color:#64f2cb;box-shadow:0 0 0 1px #64f2cb88,0 10px 24px #0004}
+#escape-room .escape-unlock{border-color:#61e5c8;background:#133e3c}
+.classroom{background:linear-gradient(130deg,#0a1028e8,#261634d9),url('assets/financial-city.svg') center/cover}
+.classroom-panel{background:linear-gradient(150deg,#252440fa,#101a2afa);border:1px solid #a28ca1;box-shadow:0 35px 110px #000c}
+body.teacher-dashboard{max-width:1520px!important;padding:clamp(18px,3vw,42px)!important}
+.teacher-dashboard .teacher-header{padding:34px;border:1px solid #a18492;border-radius:24px;background:linear-gradient(90deg,#10162bed,#171c39b8),url('assets/financial-city.svg') center 46%/cover;box-shadow:0 18px 50px #0006}
+.teacher-dashboard .teacher-header h1{font-size:clamp(30px,4vw,54px);line-height:1.08;letter-spacing:-2px;color:#fff0d5;margin:10px 0 14px}
+.teacher-dashboard .teacher-header p{max-width:860px;color:#e0e9f7;line-height:1.7}
+.teacher-dashboard .teacher-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0;padding:20px;background:#19243a;border:1px solid #536886;border-radius:18px}
+.teacher-dashboard .teacher-toolbar input{max-width:400px;margin:0;background:#0b1528}
+.teacher-dashboard .teacher-toolbar button{background:#293956;border:1px solid #697d9c;border-radius:11px;color:#f5f7ff;font-weight:700}
+.teacher-dashboard .teacher-toolbar button:hover{background:#3d4d70}
+.teacher-dashboard section{background:linear-gradient(145deg,#1c2943,#101a2e);border:1px solid #4c6181;border-radius:20px;padding:25px;margin-top:22px;box-shadow:0 15px 30px #0003}
+.teacher-dashboard section h2{font-size:25px;color:#ffd29a;margin:0 0 20px}
+.teacher-dashboard table{background:transparent;width:100%}
+.teacher-dashboard th{background:#263956;color:#ffd39b;white-space:nowrap;font-size:12px;letter-spacing:.4px}
+.teacher-dashboard td{color:#e1ebf7}
+.teacher-dashboard tr:nth-child(even) td{background:#ffffff08}
+.teacher-dashboard #status{color:#91e8cb;font-weight:700}
+@media(max-width:1100px){.welcome{grid-template-columns:1fr}.welcome-art{min-height:550px}.columns{grid-template-columns:1fr}.side{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.app{padding:14px}.top{align-items:flex-start}.welcome-art{min-height:470px;padding:26px}.welcome h1{font-size:clamp(49px,11vw,72px);letter-spacing:-3px}.startpanel{padding:25px}.hero{padding:25px;min-height:240px;flex-direction:column}.chapter{align-self:flex-end}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats article{min-height:135px;padding:18px}.side{grid-template-columns:1fr}.teacher-dashboard .teacher-header{padding:23px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media print{body{background:white!important}.teacher-dashboard .teacher-header{background:white;color:black}.teacher-dashboard section{background:white;color:black}}
