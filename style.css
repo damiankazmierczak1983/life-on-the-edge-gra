@@ -139,3 +139,34 @@ body.teacher-dashboard{max-width:1520px!important;padding:clamp(18px,3vw,42px)!i
 @media(max-width:700px){.app{padding:14px}.top{align-items:flex-start}.welcome-art{min-height:470px;padding:26px}.welcome h1{font-size:clamp(49px,11vw,72px);letter-spacing:-3px}.startpanel{padding:25px}.hero{padding:25px;min-height:240px;flex-direction:column}.chapter{align-self:flex-end}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats article{min-height:135px;padding:18px}.side{grid-template-columns:1fr}.teacher-dashboard .teacher-header{padding:23px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 @media print{body{background:white!important}.teacher-dashboard .teacher-header{background:white;color:black}.teacher-dashboard section{background:white;color:black}}
+
+
+/* LIFE ON THE EDGE 13.1 — human-centred narrative direction */
+:root{--gold:#eec39a;--accent:#d99c80;--cyan:#a9c9ce;--purple:#b5a5ba}
+body{background:radial-gradient(ellipse at 10% 0%,#3d333f 0,transparent 38%),radial-gradient(ellipse at 95% 55%,#23414b 0,transparent 43%),linear-gradient(155deg,#151b27,#242531 55%,#101f2b)}
+body:before{opacity:.07}
+.welcome-art{background:linear-gradient(0deg,#101521 1%,#121827ee 30%,#151b2e91 65%,#171a2955 100%),url('assets/life-story.svg') 56% center/cover;border-color:#a68c83;box-shadow:0 28px 75px #0009}
+.welcome-art:after{background:linear-gradient(90deg,#121725c9,transparent 95%)}
+.welcome h1 span{background:linear-gradient(95deg,#ffe7b7,#e5a18b);background-clip:text;-webkit-background-clip:text}
+.welcome-art>.overline{color:#ffdaaa}
+.startpanel{background:linear-gradient(150deg,#302b37,#1a2433 57%,#18232d);border-top-color:#e6b895}
+.startpanel h2{color:#fff1e1}
+.hero{background:linear-gradient(95deg,#111a28f5 4%,#182232d8 58%,#1d293b99),url('assets/life-story.svg') 57% 42%/cover;border-color:#978a88}
+.hero h1{color:#fff3e7}.chapter strong{color:#f3c99c}
+.stats article{background:linear-gradient(145deg,#2b3546,#1a2532)}
+.stats article:nth-child(1){border-top-color:#e9b78e}.stats article:nth-child(2){border-top-color:#99bfc9}.stats article:nth-child(3){border-top-color:#b6a2b9}.stats article:nth-child(4){border-top-color:#8ac9b3}
+.event,.panel,.scorebox,.reportbox{background:linear-gradient(155deg,#29313e,#1b2633 55%,#242936);border-color:#657181}
+.event{border-left-color:#e4b48e}.event h2{color:#fff0dc}
+.option{background:linear-gradient(115deg,#344051,#252d3b);border-color:#78818d}
+.option:hover{background:linear-gradient(110deg,#4b4350,#344755);border-color:#f3c59e}
+.cta{background:linear-gradient(100deg,#e6a086,#f5c898 60%,#ffe3b0);box-shadow:0 10px 30px #b7755940}
+.teacher-dashboard .teacher-header{background:linear-gradient(90deg,#151c2bed,#202838a8),url('assets/life-story.svg') 54% 50%/cover}
+.classroom{background:linear-gradient(130deg,#111928ed,#2a2732d6),url('assets/life-story.svg') center/cover}
+body[data-chapter="1"]{--chapter-tone:#e9b48e}body[data-chapter="2"]{--chapter-tone:#a7c5d3}body[data-chapter="3"]{--chapter-tone:#c6b1cf}body[data-chapter="4"]{--chapter-tone:#c7c99a}body[data-chapter="5"]{--chapter-tone:#e7a78b}body[data-chapter="6"]{--chapter-tone:#a9cfc6}body[data-chapter="7"]{--chapter-tone:#d6b8a3}body[data-chapter="8"]{--chapter-tone:#a8b9d8}body[data-chapter="9"]{--chapter-tone:#e1a1a4}body[data-chapter="10"]{--chapter-tone:#b9c8a0}body[data-chapter="11"]{--chapter-tone:#c5b4d7}body[data-chapter="12"]{--chapter-tone:#f2d09b}
+body[data-chapter] .event{border-left-color:var(--chapter-tone)}
+body[data-chapter] .chapter{border-color:var(--chapter-tone)}
+body[data-chapter] .chapter strong{color:var(--chapter-tone)}
+body[data-chapter] .hero{box-shadow:0 18px 48px #0007,inset 0 -4px 0 var(--chapter-tone)}
+body[data-chapter] .eventhead .section-label{color:var(--chapter-tone)}
+body[data-chapter] .progress div{background:linear-gradient(90deg,#9bb9c7,var(--chapter-tone))}
+@media(max-width:700px){.welcome-art{background-position:60% center}.hero{background-position:58% center}}
