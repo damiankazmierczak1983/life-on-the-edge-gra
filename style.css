@@ -200,3 +200,18 @@ body[data-chapter="1"]{--chapter-duration:1}body[data-chapter="2"]{--chapter-dur
 @keyframes story-rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 @keyframes story-evidence{0%{box-shadow:0 0 0 0 #70e6be88}100%{box-shadow:0 0 0 12px #70e6be00}}
 @media(prefers-reduced-motion:reduce){.welcome-art,.welcome-art:before,.welcome-art .overline,.welcome-art h1,.welcome-art p,.welcome-badges,.startpanel,.hero,.hero:before,.hero-copy,#escape-room .escape-doc.selected-evidence{animation:none!important}.stats article:hover,#escape-room .escape-doc:hover{transform:none}}
+
+/* 13.3 — twelve distinct chapter scene backdrops */
+body[data-chapter="1"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-01.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="2"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-02.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="3"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-03.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="4"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-04.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="5"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-05.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="6"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-06.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="7"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-07.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="8"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-08.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="9"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-09.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="10"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-10.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="11"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-11.svg');background-size:cover;background-position:55% 48%}
+body[data-chapter="12"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-12.svg');background-size:cover;background-position:55% 48%}
+@media(max-width:700px){body[data-chapter] .hero{background-position:65% center}}
