@@ -215,3 +215,13 @@ body[data-chapter="10"] .hero{background-image:linear-gradient(95deg,#111927f5 0
 body[data-chapter="11"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-11.svg');background-size:cover;background-position:55% 48%}
 body[data-chapter="12"] .hero{background-image:linear-gradient(95deg,#111927f5 0%,#17202edc 45%,#19223480 100%),url('assets/chapter-12.svg');background-size:cover;background-position:55% 48%}
 @media(max-width:700px){body[data-chapter] .hero{background-position:65% center}}
+/* 13.4: make actual chapter artwork visible, rather than hiding under dark overlays */
+body[data-chapter] .hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr) auto;gap:20px;align-items:center;min-height:320px;background:linear-gradient(110deg,#151e2c,#273242);overflow:hidden}
+.chapter-scene{position:relative;margin:0;align-self:stretch;min-height:260px;overflow:hidden;border-radius:17px;border:1px solid #d3b28d77;background:#273344;box-shadow:0 12px 30px #0007}
+.chapter-scene img{display:block;width:100%;height:100%;min-height:260px;object-fit:cover;object-position:61% center;filter:none;animation:scene-breathe 16s ease-in-out infinite alternate}
+.chapter-scene figcaption{position:absolute;bottom:12px;left:12px;background:#111b2be8;border:1px solid #c7a78b66;border-radius:7px;padding:7px 11px;color:#ffdfb4;font-size:10px;letter-spacing:1.5px;font-weight:800}
+.hero .chapter{position:relative;z-index:2}
+@keyframes scene-breathe{from{transform:scale(1)}to{transform:scale(1.055)}}
+@media(max-width:1050px){body[data-chapter] .hero{grid-template-columns:1fr 1fr}.hero .chapter{grid-column:1/-1;justify-self:end}.chapter-scene{min-height:220px}}
+@media(max-width:650px){body[data-chapter] .hero{grid-template-columns:1fr;gap:15px}.chapter-scene{min-height:220px}.chapter-scene img{min-height:220px}.hero .chapter{grid-column:auto;justify-self:stretch}}
+@media(prefers-reduced-motion:reduce){.chapter-scene img{animation:none}}
