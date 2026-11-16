@@ -1,0 +1,6 @@
+"use strict";
+(()=>{
+function download(name,data){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+document.getElementById('export-json').addEventListener('click',()=>{
+const save=JSON.parse(localStorage.getItem('lote_v1_save')||'null');if(!save?.state){alert('Nie znaleziono zapisu gry.');return}const s=save.state,investigations=window.LOTE_OFFLINE.all(),attempts=Object.values(investigations).reduce((n,p)=>n+p.attempts,0),hints=Object.values(investigations).reduce((n,p)=>n+p.hints,0),solved=Object.values(investigations).reduce((n,p)=>n+p.stage,0);const result={format:'LIFE_ON_THE_EDGE_OFFLINE_V12',exportedAt:new Date().toISOString(),nick:s.nick,profile:s.profile,seed:s.seed,round:s.round,finished:s.round>12,cash:s.cash,net:window.LOTE.netWorth(s),score:window.LOTE.report(s).score,defaults:s.defaultMonths,investigations,solved,attempts,hints,verifiedPoints:Math.max(0,solved*100-Math.max(0,attempts-solved)*5-hints*10),choices:s.choices};download('LIFE_ON_THE_EDGE_'+(s.nick||'gracz').replace(/[^a-z0-9_-]/gi,'_')+'.json',result)});
+})();
